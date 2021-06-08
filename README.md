@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # wave_progress_widget with null safety is now available!
+=======
+# The wave loading indicator
+>>>>>>> Small changes
 
 >A customable wave progress widget
 
@@ -12,7 +16,7 @@
 
 ````dart
 dependencies:
-  wave_progress_widget_ns: ^1.0.0
+  wave_loading_indicator: ^1.0.5
   ````
   
  2. Add this import to your dart file:

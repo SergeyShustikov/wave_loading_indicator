@@ -2,7 +2,7 @@ Look to this code to understand how to use this library
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:wave_progress_widget_ns/wave_progress.dart';
+import 'package:wave_loading_indicator/wave_progress.dart';
 
 void main() => runApp(new MyApp());
 

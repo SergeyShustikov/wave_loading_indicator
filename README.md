@@ -32,8 +32,6 @@ WaveProgress(
 ),
   ````
  
-## Getting Started
+## Do you have ideas how to improve this library?
 
-For help getting started with Flutter, view our online [documentation](https://flutter.io/).
-
-For help on editing package code, view the [documentation](https://flutter.io/developing-packages/).
+Leave an issue in repository! I will be back soon to you!

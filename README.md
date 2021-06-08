@@ -1,10 +1,5 @@
 # The wave loading indicator
 
->A customable wave progress widget
-
-
-## Preview
-
 <img src="https://github.com/SergeyShustikov/wave_loading_indicator/blob/master/art/example_1.gif?raw=true" width="340px" />
 <img src="https://github.com/SergeyShustikov/wave_loading_indicator/blob/master/art/example_2.gif?raw=true" width="340px" />
 

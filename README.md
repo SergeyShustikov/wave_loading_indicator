@@ -1,4 +1,4 @@
-# wave_progress_widget with null safety is not available!
+# wave_progress_widget with null safety is now available!
 
 >A customable wave progress widget
 

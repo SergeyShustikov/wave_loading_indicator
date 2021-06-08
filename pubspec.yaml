@@ -1,5 +1,5 @@
 name: wave_loading_indicator
-description: Reincarnation of deprecated library
+description: Reincarnation of deprecated library. With more customizations and tuned logic. Try now!
 repository: https://github.com/SergeyShustikov/wave_loading_indicator
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -14,7 +14,7 @@ repository: https://github.com/SergeyShustikov/wave_loading_indicator
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.6
+version: 1.0.7
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

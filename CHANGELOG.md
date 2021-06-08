@@ -27,3 +27,8 @@
 # 1.0.6
 
 * Added image
+
+
+# 1.0.7
+
+* Added more customizations!

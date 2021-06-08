@@ -4,61 +4,59 @@ Look to this code to understand how to use this library
 import 'package:flutter/material.dart';
 import 'package:wave_loading_indicator/wave_progress.dart';
 
-void main() => runApp(new MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'Flutter Demo',
-      theme: new ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: new MyHomePage(title: 'Wave Progress Widget'),
+      home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, this.title}) : super(key: key);
-  final String? title;
-
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var _progress = 50.0;
+  double _progress = 0.0;
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(widget.title!),
-      ),
-      body: new Center(
-        child: new Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            WaveProgress(180.0, Colors.blue, Colors.blueAccent, _progress),
-            Container(
-              margin: EdgeInsets.only(top: 20.0, bottom: 20.0),
-              child: Slider(
-                  max: 100.0,
-                  min: 0.0,
-                  value: _progress,
-                  onChanged: (value) {
-                    setState(() => _progress = value);
-                  }),
-            ),
-            Text(
-              '${_progress.round()}',
-              style: TextStyle(color: Colors.blueAccent, fontSize: 40.0),
-            )
-          ],
+    return Scaffold(
+      body: Center(
+        child: WaveProgress(
+          borderSize: 3.0,
+          size: 180,
+          borderColor: Colors.redAccent,
+          foregroundWaveColor: Colors.greenAccent,
+          backgroundWaveColor: Colors.blueAccent,
+          progress: _progress,
+          innerPadding: 10,
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ), 
     );
   }
+
+  void _incrementCounter() {
+    setState(() {
+      _progress += 10;
+      if (_progress > 100) {
+        _progress = 0;
+      }
+    });
+  }
 }
+
 ```

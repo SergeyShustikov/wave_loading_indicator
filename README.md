@@ -1,22 +1,18 @@
-<<<<<<< HEAD
-# wave_progress_widget with null safety is now available!
-=======
 # The wave loading indicator
->>>>>>> Small changes
 
 >A customable wave progress widget
 
 
 ## Preview
 
-<img src="https://github.com/studioidan/wave_progress/blob/master/art/screen1.gif" width="340px" />
+<img src="https://github.com/SergeyShustikov/wave_loading_indicator/blob/master/art/screen1.gif?raw=true" width="340px" />
 
 # How to use
  1. Add this to your package's pubspec.yaml file:
 
 ````dart
 dependencies:
-  wave_loading_indicator: ^1.0.5
+  wave_loading_indicator: ^1.0.6
   ````
   
  2. Add this import to your dart file:

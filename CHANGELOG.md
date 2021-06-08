@@ -23,3 +23,7 @@
 # 1.0.5
 
 * Changed package in description
+
+# 1.0.6
+
+* Added image
